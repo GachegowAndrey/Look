@@ -61,33 +61,67 @@ progress::-moz-progress-bar {
 }
 
 
-		.lbl-jobtype {
+details{
+cursor:pointer;
+}
+
+
+
+
+
+#scale0:checked~#scale0{
+ display:block;
+}
+#scale1:checked~#scale1{
+ display:block;
+}
+#scale2:checked~#scale2{
+ display:block;
+}
+#scale3:checked~#scale3{
+ display:block;
+}
+
+
+.scale {
+  /* hide radio button */
+  position: fixed;
+  left: 100%;
+  top: 100%;
+  
+}
+.scales{
+display:none;
+}
+.button {
+  display:inline-block;
+  padding: 8px;
+  
+  margin: 0px 3px 0px 0px;
+  font-size: 15px;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  cursor: pointer;
+  
   border: 1px solid black;
+  border-radius: 5px;
+  color:#6b7ead;
+  background-color:white;
 }
 
-input[name='jobtype'] {
-  display: none;
+.button:hover {
+  background: black;
+  color: white;
+  border: 1px solid white;
 }
 
-.text-for-jobtype {
-  display: none;
-}
-
-#jt-Spanish:checked~#t-Spanish {
-  display: block;
-}
-
-#jt-German:checked~#t-German {
-  display: block;
-}
-
-#jt-French:checked~#t-French {
-  display: block;
- 
-}
-#jt-English:checked~#t-English {
-  display: block;
-
+.scale:checked + label {  
+  color:gold;
+ background-color:black;
+ # background-color: #FE0200;
+  #color: white;
+  text-shadow: 1px 1px 3px #8e8e8e;
 }
 		</style>
 		
@@ -116,20 +150,19 @@ input[name='jobtype'] {
 			
 
 
-<input type="radio" name="jobtype" id="jt-French" />
-<label class="lbl-jobtype" for="jt-French">French</label>
-<input type="radio" name="jobtype" id="jt-English" />
-<label class="lbl-jobtype" for="jt-English">English</label>
-<input type="radio" name="jobtype" id="jt-German" />
-<label class="lbl-jobtype" for="jt-German">German</label>
+<input id="scale0" class="scale" name="scale" type="radio" value="0" >
+<label for="scale0" class="button">&nbsp;Spanish&nbsp;</label>
+<input id="scale1" class="scale" name="scale" type="radio" value="1">
+<label for="scale1" class="button">&nbsp;English&nbsp;</label>
+<input id="scale2" class="scale" name="scale" type="radio" value="2">
+<label for="scale2" class="button">&nbsp;German&nbsp;</label>
+<input id="scale3" class="scale" name="scale" type="radio" value="3">
+<label for="scale3" class="button">&nbsp;French&nbsp;</label>
 
-<input type="radio" name="jobtype" id="jt-Spanish" />
-<label class="lbl-jobtype" for="jt-Spanish">Spanish</label>
-
-<p class="text-for-jobtype" id="t-Spanish">No hablo Espanol</p>
-<p class="text-for-jobtype" id="t-English">Hey! I'm <strong>Andrey</strong>. I do not know what to write next. </p>
-<p class="text-for-jobtype" id="t-German">Ich spreche nicht Deutsch</p>
-<p class="text-for-jobtype" id="t-French">je ne parle pas francais</p>
+<a class="scales" id="scale0">No hablo Espanol</a>
+<a class="scales" id="scale1">Hey! I'm <strong>Andrey</strong>. I do not know what to write next. </a>
+<a class="scales" id="scale2">Ich spreche nicht Deutsch</a>
+<a class="scales" id="scale3">Je ne parle pas francais</a>
 
         
 	
