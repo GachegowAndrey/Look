@@ -4,8 +4,11 @@
 	<meta charset="utf-8" />
 	
         <title> My Page</title>
-		
+		<link rel="stylesheet" href="css/Chart.min.css"/>
 		<style>
+		#canvas {
+    border: 1px solid black;
+}
 		.cl { clear: both; height: 0; line-height: 0; font-size: 0; text-indent: -4000px; }
 		.separator { 
 	height: 1px;
@@ -166,6 +169,8 @@ span{
 		</style>
 		
 <script>
+
+ 
  function Complete() {
  	
  
@@ -181,8 +186,9 @@ span{
  	document.getElementById("Example").innerHTML="";
  }
 </script>
+
 	</head>
-	<body>
+	<body >
  <input id="scale2" class="scale" name="scale" type="radio" value="2">
 <label for="scale2" class="button">&nbsp;German&nbsp;</label>
 <input id="scale3" class="scale" name="scale" type="radio" value="3">
@@ -259,80 +265,82 @@ span{
 
 </li>
 </ul>
-<div class ="col-right">	
-  <h2><p>My language progress</p></h2>
- 
-    <ul>
+<div class ="col-right">
+  
+<h2><p>My language progress</p></h2>
+  
+  <ul>
                 <details>
                    <summary>English </summary><ul>
-				    <li><p>Crowns: 355/636  complete</p>
-                    <progress  value="355" max="636" ></progress>
-					<li><p>Skills: 129/129  complete</p>
+            <li><p>Crowns: 360/774  complete</p>
+                    <progress  value="360" max="774" ></progress>
+          <li><p>Skills: 129/129  complete</p>
                     <progress  value="129" max="129" ></progress>
-					<li><p>Lessons: 602/614 complete</p>
+          <li><p>Lessons: 602/614 complete</p>
                     <progress  value="602" max="614"></progress>
-					</br>
-					<div class="hint">
-	</br><span style ="background-color:purple" aria-label="0 incomplete skills" title="0 incomplete skills">0 L0</span><span 
-	style ="background-color:lightblue" aria-label="55 L1 skills" title="55 skills Level 1">55 L1</span><span 
-	style ="background-color:green" aria-label="8 L2 skills" title="8 skills Level 2">8 L2</span><span 
-	style ="background-color:red" aria-label="14 L3 skills" title="14 skills Level 3">14 L3</span><span 
-	style ="background-color:orange" aria-label="25 L4 skills" title="25 skills Level 4">25 L4 </span><span 
-	style ="background-color:gold" aria-label="20 golden skills" title="20 golden skills">20  L5</span><span 
-	style ="background-color:darkblue" aria-label="7 legendary skills" title="7 legendary skills">7 L6</span>
-	</div>
-					<li><p>Lexemes: 4095/4099 complete</p>
+          </br>
+  <div class="hint">
+  </br><span style ="background-color:purple" aria-label="0 incomplete skills" title="0 incomplete skills">0 L0</span><span 
+  style ="background-color:lightblue" aria-label="50 L1 skills" title="50 skills Level 1">50 L1</span><span 
+  style ="background-color:green" aria-label="13 L2 skills" title="13 skills Level 2">13 L2</span><span 
+  style ="background-color:red" aria-label="14 L3 skills" title="14 skills Level 3">14 L3</span><span 
+  style ="background-color:orange" aria-label="25 L4 skills" title="25 skills Level 4">25 L4 </span><span 
+  style ="background-color:gold" aria-label="20 golden skills" title="20 golden skills">20  L5</span><span 
+  style ="background-color:darkblue" aria-label="7 legendary skills" title="7 legendary skills">7 L6</span>
+  </div>
+          <li><p>Lexemes: 4095/4099 complete</p>
                     <progress  value="4095" max="4099"></progress></ul>
                 </li></details>
-				
-				<details>
+        
+        <details>
                    <summary>Spanish </summary><ul>
-				    <li><p>Crowns: 160/1525</p>
-					<progress value="160" max="1525" ></progress>
+            <li><p>Crowns: 167/1525</p>
+          <progress value="160" max="1525" ></progress>
                     <li><p>Skills: 41/268</p>
-					<progress value="41" max="268" ></progress>
+          <progress value="41" max="268" ></progress>
                     <li><p>Lessons: 161/1193</p>
-					<progress value="161" max="1193" ></progress>
-					
-					<div class="hint">
-	</br><span style ="background-color:purple" aria-label="227 incomplete skills" title="227 skills incomplete ">227 L0</span><span 
-	style ="background-color:lightblue" aria-label="3 L1 skills" title="3 skills Level 1 ">3 L1</span><span 
-	style ="background-color:green" aria-label="5 L2 skills" title="5 skills Level 2 ">5 L2</span><span 
-	style ="background-color:red" aria-label="7 L3 skills" title="7 skills Level 3 ">7 L3</span><span 
-	style ="background-color:orange" aria-label="3 L4 skills" title="3 skills Level 4">3 L4 </span><span 
-	style ="background-color:gold" aria-label="15 golden skills" title="15 golden skills">15  L5</span><span 
-	style ="background-color:darkblue" aria-label="8 legendary skills" title="8 legendary skills">8 L6</span>
-	</div>
+          <progress value="161" max="1193" ></progress>
+          
+          <div class="hint">
+  </br><span style ="background-color:purple" aria-label="227 incomplete skills" title="227 skills incomplete ">227 L0</span><span 
+  style ="background-color:lightblue" aria-label="3 L1 skills" title="3 skills Level 1 ">3 L1</span><span 
+  style ="background-color:green" aria-label="2 L2 skills" title="2 skills Level 2 ">2 L2</span><span 
+  style ="background-color:red" aria-label="6 L3 skills" title="6 skills Level 3 ">6 L3</span><span 
+  style ="background-color:orange" aria-label="7 L4 skills" title="7 skills Level 4">7 L4 </span><span 
+  style ="background-color:gold" aria-label="15 golden skills" title="15 golden skills">15  L5</span><span 
+  style ="background-color:darkblue" aria-label="8 legendary skills" title="8 legendary skills">8 L6</span>
+  </div>
                     <li><p>Lexemes: 1024/6447 </p>
                     <progress value="1024" max="6447" ></progress></ul>
-					</li></details>
-					
-				<details>
+          </li></details>
+          
+        <details>
                  <summary>German </summary><ul>
-				<li><p>Crowns: 27/826 complete </p>
-				<progress value="27" max="826" ></progress>
-				<li><p>Skills: 9/137 complete</p>
-				<progress value="9" max="137" ></progress>
+        <li><p>Crowns: 27/826 complete </p>
+        <progress value="27" max="826" ></progress>
+        <li><p>Skills: 9/137 complete</p>
+        <progress value="9" max="137" ></progress>
                <li> <p>Lessons: 34/674 complete</p>
-				<progress value="34" max="674" ></progress>
+        <progress value="34" max="674" ></progress>
                <li> <p>Lexemes: 238/4450  complete</p>
                     <progress value="238" max="4450" ></progress>
                 </li></details>
                  
-				 <details>
+         <details>
                  <summary>French </summary><ul>
-				<li><p>Crowns: 17/1408complete</p>
-				<progress  value="17" max="1408" ></progress>
+        <li><p>Crowns: 17/1408complete</p>
+        <progress  value="17" max="1408" ></progress>
                 <li><p>Skills: 5/247 complete</p>
-				<progress  value="5" max="247" ></progress>
+        <progress  value="5" max="247" ></progress>
                 <li> <p>Lessons: 22/1206 complete </p>
-				<progress  value="22" max="1206" ></progress>
+        <progress  value="22" max="1206" ></progress>
                 <li> <p>Lexemes: 154/6749  complete</p>
                     <progress  value="154" max="64709" ></progress>
                 </li></details>
-                						
+                            
             </ul>
-			</div>
+</div>
+
 <div class ="col-left">		
  <h2><p>My layout progress</p></h2>
     <ul>
@@ -362,7 +370,24 @@ span{
             </ul>
  </div>
 </br>
-
+<div class ="col-left">   
+ <h2><p>Duolingo's Graphics</p></h2>
+ <details><summary>Exp</summary>
+  <canvas class="chartEx"></canvas>
+</details>
+<details><summary>Time</summary>
+  <canvas class="chartTm"></canvas>
+  </details>
+  <details><summary>Words</summary> 
+  <canvas class="chartWrd"></canvas> 
+  </details>
+  <details><summary>Phrase</summary>
+  <canvas class="chartPh"></canvas> 
+  </details>
+  <details><summary>Lessons</summary>
+  <canvas class="chartLes"></canvas>
+  </details>
+</div>>
 <div class="cl">&nbsp;</div>
 <div class="separator">&nbsp;</div>
 
@@ -389,5 +414,9 @@ span{
   <li><a href="Content/Wrecks(Freelancer).html"target="_blank">Content</a></li>
  </ul>
 </div>
+<script src="js/chart.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/main1.js"></script>
+
 	</body>
 </html>
