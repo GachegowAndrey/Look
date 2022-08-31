@@ -2,10 +2,10 @@ var barDiv = document.getElementById('daggers');
 
 var StrenghtLevel0 = {
   x: ["Aneled Stilettos", "Golden Stilettos", "Rusted Daggers", "Aneled Snags", "Snags of Gold", 
-  "Aneled Bardiches", "Golden Bardiches", "Criteria"],
-  y: [48, 58, 7, 87, 106, 117, 141, 151],
+  "Aneled Bardiches", "Golden Bardiches", "Criteria","Throatcutters","Saurian Bane"],
+  y: [48, 58, 7, 70, 85, 97, 117, 36,61,54],
   type: 'bar',
-  text: ['Tarring','Silence','','Overspeeding','','Overspeeding','','Overspeeding'],
+  text: ['Tarring','Silence','','Overspeeding','','Overspeeding','','Overspeeding','',''],
   textposition: 'inside',
   name: 'StrenghtLevel0',
   marker:{
@@ -20,10 +20,10 @@ var StrenghtLevel0 = {
 
 var Strenght1Star = {
   x: ["Aneled Stilettos", "Golden Stilettos", "Rusted Daggers", "Aneled Snags", "Snags of Gold", 
-  "Aneled Bardiches", "Golden Bardiches", "Criteria"],
-  y: [50, 61, 14, 87, 106, 117, 141, 151],
+  "Aneled Bardiches", "Golden Bardiches", "Criteria","Throatcutters","Saurian Bane"],
+  y: [50, 61, 14, 73, 89, 100, 121, 47,72,71],
   type: 'bar',
-  text: ['Tarring  <br> 610 G','Silence 560 G','','Overspeeding','','Overspeeding','','Overspeeding'],
+  text: ['Tarring  <br> 610 G','Silence <br> 560 G','','Overspeeding','','Overspeeding','','Overspeeding','',''],
   textposition: 'inside',
   name: 'Strenght1Star',
   marker:{
@@ -38,8 +38,8 @@ var Strenght1Star = {
 
 var Strenght2Star = {
   x: ["Aneled Stilettos", "Golden Stilettos", "Rusted Daggers", "Aneled Snags", "Snags of Gold", 
-  "Aneled Bardiches", "Golden Bardiches", "Criteria"],
-  y: [54, 65, 21, 87, 106, 117, 141, 151],
+  "Aneled Bardiches", "Golden Bardiches", "Criteria","Throatcutters","Saurian Bane"],
+  y: [54, 65, 21, 77, 94, 105, 127, 59,84,101],
   type: 'bar',
   name: 'Strenght2Star',
   marker:{
@@ -54,8 +54,8 @@ var Strenght2Star = {
 
 var Strenght3Star = {
   x: ["Aneled Stilettos", "Golden Stilettos", "Rusted Daggers", "Aneled Snags", "Snags of Gold", 
-  "Aneled Bardiches", "Golden Bardiches", "Criteria"],
-  y: [57, 69, 35, 87, 106, 117, 141, 151],
+  "Aneled Bardiches", "Golden Bardiches", "Criteria","Throatcutters","Saurian Bane"],
+  y: [57, 69, 35, 82, 100, 111, 134, 70,95,143],
   type: 'bar',
   name: 'Strenght3Star',
   marker:{
@@ -69,8 +69,8 @@ var Strenght3Star = {
 };
 var StrenghtDragonForged = {
   x: ["Aneled Stilettos", "Golden Stilettos", "Rusted Daggers", "Aneled Snags", "Snags of Gold", 
-  "Aneled Bardiches", "Golden Bardiches", "Criteria"],
-  y: [66, 80, 84, 87, 106, 117, 141, 151],
+  "Aneled Bardiches", "Golden Bardiches", "Criteria","Throatcutters","Saurian Bane"],
+  y: [66, 80, 84, 87, 106, 117, 141, 151,170,191],
   type: 'bar',
   name: 'StrenghtDragonForged',
   marker:{
@@ -85,8 +85,8 @@ var StrenghtDragonForged = {
 
 var StrenghtSilverD = {
   x: ["Aneled Stilettos", "Golden Stilettos", "Rusted Daggers", "Aneled Snags", "Snags of Gold", 
-  "Aneled Bardiches", "Golden Bardiches", "Criteria"],
-  y: [356, 387, 321, 388, 410, 404, 466, 395],
+  "Aneled Bardiches", "Golden Bardiches", "Criteria","Throatcutters","Saurian Bane"],
+  y: [356, 387, 321, 388, 410, 404, 466, 395,407,359],
   type: 'bar',
   name: 'StrenghtSilverD',
   marker:{
@@ -100,8 +100,8 @@ var StrenghtSilverD = {
 
 var StrenghtGoldD = {
   x: ["Aneled Stilettos", "Golden Stilettos", "Rusted Daggers", "Aneled Snags", "Snags of Gold", 
-  "Aneled Bardiches", "Golden Bardiches", "Criteria"],
-  y: [415, 451, 405, 439, 495,471, 529, 504],
+  "Aneled Bardiches", "Golden Bardiches", "Criteria","Throatcutters","Saurian Bane"],
+  y: [415, 451, 405, 439, 495,471, 529, 504,518,459],
   type: 'bar',
   name: 'StrenghtGoldD',
   marker:{
