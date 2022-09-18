@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TaBle</title>
+	<link rel="stylesheet" href="css/webdatarocks.min.css"/>
+	<link rel="stylesheet" href="css/webdatarocks.js"/>
+</head>
+<body>
+     <div id = "wdr-component" ></div>
+     
+   <script src="js/webdatarocks.js"></script>
+   <script src="js/webdatarocks.toolbar.min.js"></script>
+   <script>
+var pivot = new WebDataRocks({
+	container: "#wdr-component",
+	toolbar: true,
+	report: {
+		dataSource: {
+			filename: "data/data.csv"
+		}
+	}
+});
+</script>
+</body>
+</html>
