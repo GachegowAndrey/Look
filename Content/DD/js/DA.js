@@ -49,7 +49,10 @@ const columnDefs = [
 const gridOptions = {
   columnDefs: columnDefs,
   defaultColDef: {
+    sortable: true,
+    editable: true,
     resizable: true,
+    filter: true,
     width: 170,
   },
   rowData: getData(),
