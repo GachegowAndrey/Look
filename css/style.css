@@ -67,7 +67,19 @@ progress::-moz-progress-bar {
     background: #efefef;
 }
 
+.spoiler-text {
+  background: white;
+  color: transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease 0.2s, color 0.2s ease 0.25s;
+}
 
+.spoiler-text:hover,
+.spoiler-text:focus {
+  background: #e8e8e8;
+  color: inherit;
+}
 
 details{
 cursor:pointer;
@@ -151,7 +163,7 @@ display:none;
 
 span{
  color:white;
- width:6%;
+ 
  display: inline-block;
  border: 1px solid black;
 }
